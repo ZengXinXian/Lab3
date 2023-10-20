@@ -47,11 +47,11 @@ public class MainActivity extends AppCompatActivity {
 
         int computer_random = (int) (Math.random() * 3);
         if (computer_random == 0) {
-            tv_mmora.setText("電腦出拳\n剪刀");
+            tv_cmora.setText("電腦出拳\n剪刀");
         } else if (computer_random == 1) {
-            tv_mmora.setText("電腦出拳\n石頭");
+            tv_cmora.setText("電腦出拳\n石頭");
         } else {
-            tv_mmora.setText("電腦出拳\n布");
+            tv_cmora.setText("電腦出拳\n布");
         }
         if ((btn_scissor.isChecked() && computer_random == 2) ||
                 (btn_stone.isChecked() && computer_random == 0) ||
